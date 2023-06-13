@@ -1,0 +1,8 @@
+If you want to use this program you have to do following items ;
+- fill admin folders 
+- fill your email , password and reciever email adresses on SecurityProjectPrediction file
+
+The important thing is number of photos. Number of admin photos has to same with human photos.
+Of course you can update the model according to the number of class(There are currently two classes)
+
+then you can start the program.
