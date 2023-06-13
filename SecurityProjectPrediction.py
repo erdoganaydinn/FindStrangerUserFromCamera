@@ -22,8 +22,8 @@ import imaplib
 import email
 def getResponse():
 
-    email_adress = "ymnerdgan1907@gmail.com"
-    password = "xvdyphvsasnjkmmd"
+    email_adress = "email"
+    password = "password"
 
     imap_server = "imap.gmail.com"
     imap_port = 993
@@ -97,8 +97,8 @@ import imghdr
 from email.message import EmailMessage
 def sendMail(message,image=True,title="Permission Denied !!!!"):
     
-    Sender_Email = "ymnerdgan1907@gmail.com"
-    Reciever_Email = "ymnerdgan190725@gmail.com"
+    Sender_Email = "email"
+    Reciever_Email = "reciever mail"
     newMessage = EmailMessage()                         
     newMessage['Subject'] = title
     newMessage['From'] = Sender_Email                   
@@ -121,7 +121,7 @@ def sendMail(message,image=True,title="Permission Denied !!!!"):
         newMessage.add_attachment(image_data, maintype='image', subtype=image_type, filename=image_name)
         
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login(Sender_Email,"xvdyphvsasnjkmmd")              
+        smtp.login(Sender_Email,"password")              
         smtp.send_message(newMessage)
 
 #############################################################
